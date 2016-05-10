@@ -1,0 +1,27 @@
+"""
+Using names.txt (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
+
+For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
+
+What is the total of all the name scores in the file?
+"""
+
+text = open('pr0022.txt')
+
+names = text.read()
+
+names = names.replace('"','').split(',')
+
+# print(names)
+# print(sorted(names))
+
+ns_sum = 0
+for m,n in enumerate(sorted(names),1):
+    l_sum = 0
+    for a in n:
+        l_sum += int(a,36) - 9
+
+    n_score = m * l_sum
+    ns_sum += n_score
+
+print(ns_sum)
