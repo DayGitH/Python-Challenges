@@ -12,7 +12,7 @@ expression has only one RPN form (no expressions like abc)
 Test Input:
 (a+(b*c))
 ((a+b)*(z+x))
-((a+t)*((b+(a+c)) ^ (c+d)))
+((a+t)*((b+(a+c))^(c+d)))
 Test Output:
 abc*+
 ab+zx+*
@@ -24,19 +24,20 @@ import re
 inp = '((a+t)*((b+(a+c))^(c+d)))'
 
 print(inp)
+
+parenth = re.compile(r"(?<=\()[^()]*(?=\))", re.DOTALL)
+symbol = re.compile(r"[+\-*/^](?=\w)", re.DOTALL)
 while True:
     # Find expression between two parens without parens inbetween. End loop if not found
-    parenth = re.compile(r"(?<=\()[^()]*(?=\))", re.DOTALL)
     txt = parenth.search(inp)
     if txt is None:
         break
 
     # find operator and its location in found expression
-    symbol = re.compile(r"[+\-*/^](?=\w)", re.DOTALL)
     sym = symbol.search(txt.group())
 
     # rearrange expression
-    new = ''.join(txt.group().split(sym.group())) + sym.group()
+    new = txt.group()[:sym.span()[0]] + txt.group()[sym.span()[1]:] + sym.group()
 
     # update rearranged expression
     inp = inp[:txt.span()[0]-1] + new + inp[txt.span()[1]+1:]
