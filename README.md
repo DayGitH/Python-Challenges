@@ -39,6 +39,10 @@
 
 **20120331B** - Stoogesort and Bogosort
 
+**20120430C** - Home Primes and Euclid-Mullin Sequence
+
+**20120502C** - Fast permutation of large sets
+
 ----------
 
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
