@@ -43,6 +43,8 @@
 
 **20120502C** - Fast permutation of large sets
 
+**20120509C** - T9 text encoder and decoder
+
 ----------
 
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
