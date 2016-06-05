@@ -43,7 +43,9 @@
 
 **20120502C** - Fast permutation of large sets
 
-**20120509C** - T9 text encoder and decoder
+**20120509C** - T9 text encoder/decoder
+
+**20120511B** - Brainf*** parser
 
 ----------
 
