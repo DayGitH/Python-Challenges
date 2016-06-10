@@ -51,6 +51,8 @@
 
 **20120519A_2** - Matrix Cipher Solver
 
+**20120519C** - Determinant of large square matrices
+
 ----------
 
 Come back to this later:
