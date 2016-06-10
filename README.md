@@ -49,6 +49,8 @@
 
 **20150514C** - Solitaire cipher encoder/decoder
 
+**20120519A_2** - Matrix Cipher Solver
+
 ----------
 
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
