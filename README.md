@@ -58,6 +58,10 @@
 Come back to this later:
 **20120519B** - Simple IM program
 
+**20120523C** - Mandlebrot set
+
+**20120528C** - Lagged Fibonacci Pseudorandom number generator
+
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
 
