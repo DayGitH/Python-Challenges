@@ -43,9 +43,24 @@
 
 **20120502C** - Fast permutation of large sets
 
-**20120509C** - T9 text encoder and decoder
+**20120509C** - T9 text encoder/decoder
+
+**20120511B** - Brainf*** parser
+
+**20150514C** - Solitaire cipher encoder/decoder
+
+**20120519A_2** - Matrix Cipher Solver
+
+**20120519C** - Determinant of large square matrices
 
 ----------
+
+Come back to this later:
+**20120519B** - Simple IM program
+
+**20120523C** - Mandlebrot set
+
+**20120528C** - Lagged Fibonacci Pseudorandom number generator
 
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
