@@ -60,7 +60,7 @@ Come back to this later:
 
 **20120523C** - Mandlebrot set
 
-**20120528C** - Lagged Fibonacci Pseudorandom number generator
+**20120528C** - Lagged Fibonacci Pseudorandom number generator - Added solutions that fail due to limitations: either too many recursions or floating point accuracy limitations (multiplication of x*10^30++ integers)
 
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
