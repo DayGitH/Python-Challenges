@@ -70,6 +70,8 @@ Come back to this later:
 
 **20120604B** - Draw Ascii Smiley
 
+**20120604C** - RSA encryption
+
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
 
