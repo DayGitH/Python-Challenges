@@ -72,6 +72,8 @@ Come back to this later:
 
 **20120604C** - RSA encryption
 
+**20120608C** - Sudoku solver
+
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
 
