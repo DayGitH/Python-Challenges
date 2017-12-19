@@ -30,7 +30,8 @@ def main():
         result = s(i, result)
         out.append(result)
 
-    print(sum(sorted(out,reverse=True)[:SIZE]))
+    print(sum(sorted(out, reverse=True)[:SIZE]))
+
 
 if __name__ == "__main__":
     main()

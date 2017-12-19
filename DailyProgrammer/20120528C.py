@@ -12,7 +12,7 @@ modulus M. One popular choice for a and b is a = 24 and b = 55. Lets use those n
 s(n) = (s(n - 24) + s(n - 55)) mod 1073741824
 
 In order for this formula to work, you need to initialize the values s(0),s(1),...,s(54), so that the recursion has
-somewhere to bottom out. Often, another random number generator is used to supply the inital values. Lets use the
+somewhere to bottom out. Often, another random number generator is used to supply the initial values. Lets use the
 random number generator from the intermediate challenge #53
 [http://www.reddit.com/r/dailyprogrammer/comments/tpxqc/5162012_challenge_53_intermediate/].
 
