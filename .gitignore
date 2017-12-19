@@ -39,3 +39,4 @@ nosetests.xml
 *.komodoproject
 
 .DS_Store
+/DailyProgrammer/apikeys_20120613C.py
