@@ -1,4 +1,5 @@
 ** Notable Challenges from [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/wiki/challenges) **
+
 -----------------
 
 **20120210C** - Pygame module
@@ -59,9 +60,23 @@
 
 **20120604A** - Polite number determination
 
+**DP20120606B** - Manual Square root
+
+**DP20120606C** - Continued Fraction representation of Square root
+
+**20120613B** - Longest palindrom in string
+
+**20120613C** - Fetch forecast with Google maps API and weather.gov API
+
+**20120615C** - Even and Odd sized magic square generator
+**DP20120620B** - Retrieve two missing numbers from large randomized sequence
+
 ----------
 
 Come back to this later:
+
+**20120315C** - N-Queen problem
+
 **20120519B** - Simple IM program
 
 **20120523C** - Mandlebrot set
@@ -73,6 +88,12 @@ Come back to this later:
 **20120604C** - RSA encryption
 
 **20120608C** - Sudoku solver
+
+**DP20120618C** - Get Stock prices from API 
+
+**DP20120620C** - Waiting on n-queen solution
+
+**DP20120622C** - Chess
 
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
