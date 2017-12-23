@@ -87,5 +87,6 @@ def main():
     decoded = matrix(ciphertext, key)
     print(decoded)
 
+
 if __name__ == "__main__":
     main()

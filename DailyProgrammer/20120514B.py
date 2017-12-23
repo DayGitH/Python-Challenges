@@ -59,10 +59,10 @@ def separate(l):
     return res
 
 
-def compare(len, i_list, w_list):
+def compare(length, i_list, w_list):
     n = 0
     for w in w_list:
-        for m in range(len):
+        for m in range(length):
             if w[m] not in i_list[m]:
                 break
         else:
@@ -80,6 +80,7 @@ def main():
         inp[n] = separate(i)
         out = compare(L, inp[n], w_list)
         print('Case #{}: {}'.format(n+1, out))
+
 
 if __name__ == "__main__":
     main()

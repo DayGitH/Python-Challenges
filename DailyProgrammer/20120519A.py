@@ -72,5 +72,6 @@ def main():
     decoded = matrix(encoded, KEY, 0)
     print(encoded, decoded)
 
+
 if __name__ == "__main__":
     main()
