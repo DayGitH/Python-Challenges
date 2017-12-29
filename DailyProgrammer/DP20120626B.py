@@ -172,8 +172,7 @@ def adfgvx_decode(code, subs_arr):
 
 
 def generate_substitution_key():
-    # TODO fix this
-    subs_key = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ")
+    subs_key = list("ABCDEFGHIKLMNOPQRSTUVWXYZ0123456789 ")
     np.random.shuffle(subs_key)
     return ''.join(subs_key)
 

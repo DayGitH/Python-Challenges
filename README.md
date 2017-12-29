@@ -69,7 +69,18 @@
 **20120613C** - Fetch forecast with Google maps API and weather.gov API
 
 **20120615C** - Even and Odd sized magic square generator
+
 **DP20120620B** - Retrieve two missing numbers from large randomized sequence
+
+**DP20120626A** - Neat ASCII spreadsheet generator
+
+**DP20120626B** - ADFGVX encryption and decryption
+
+**DP20120626C** - ADFGVX code breaking for simple caesar-shifted substitution keys
+
+**DP20120702B** - Higher order Fibonacci sequences
+
+**DP20120702C** - FRACTRAN interpreter and programming
 
 ----------
 
