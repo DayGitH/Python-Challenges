@@ -82,6 +82,12 @@
 
 **DP20120702C** - FRACTRAN interpreter and programming
 
+**DP20120704A** - Elementary cellular automatons
+
+**DP20120706A** - Reverse Polish Notation parser
+
+**DP20120706C** - Huffman encoder and decoder
+
 ----------
 
 Come back to this later:

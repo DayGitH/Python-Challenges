@@ -55,9 +55,9 @@ def resolve_fraction(f):
 
 def fractran(fractions, n):
     res = []
-    for i in range(10):
+    for i in range(100):
         for f in fractions:
-            if ((n/f[1]) * f[0]) % 1 < 10**-5:
+            if ((n/f[1]) * f[0]) % 1 < 10**-2:
                 res.append(n)
                 n = round((n/f[1]) * f[0])
                 break
@@ -83,7 +83,7 @@ def div_three_fractran(n):
 
 
 def almost_factorial_fractran(n):
-    f_list = [[55, 14], [ 7, 11], [ 1,  7], [ 6,  5], [ 7,  2]]
+    f_list = [[231, 10], [ 5, 11], [ 1,  5], [ 2,  7], [ 5,  2]]
     return fractran(f_list, n)
 
 
@@ -95,7 +95,7 @@ def main():
     # print(min_fractran(2**3 * 3**6))
     # print(max_fractran(2**3 * 3**6))
     # print(div_three_fractran(2097152))
-    print(almost_factorial_fractran(2**4))
+    print(almost_factorial_fractran(2**5))
 
 
 if __name__ == "__main__":
