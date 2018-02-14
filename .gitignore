@@ -40,3 +40,6 @@ nosetests.xml
 
 .DS_Store
 /DailyProgrammer/apikeys_20120613C.py
+/DailyProgrammer/daily_programmer.py
+/DailyProgrammer/reddit_api.py
+/DailyProgrammer/test.py
