@@ -114,6 +114,8 @@ Come back to this later:
 
 **DP20120622C** - Chess
 
+**DP20120716C** - Boggle solver
+
 ** Originally Forked from: [https://github.com/karan/Projects](https://github.com/karan/Projects)**
 
 

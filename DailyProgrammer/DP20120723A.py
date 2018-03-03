@@ -9,8 +9,8 @@ I've never been good at these kinds of word-games (like anagrams), I always find
 manually. I find it much more enjoyable to write computer programs to solve these problems for me. In the spirit of
 that, today's problem is to find simple one-word anagrams for other words.
 Write a program that given a word will find all one-word anagrams for that word. So, for instance, if you put in
-"LEPROUS", it should return "PELORUS" and "SPORULE". As a dictionary, use [this
-file](http://code.google.com/p/dotnetperls-controls/downloads/detail?name=enable1.txt), which is a 1.8 mb text-file
+"LEPROUS", it should return "PELORUS" and "SPORULE". As a dictionary, use [this file]
+(http://code.google.com/p/dotnetperls-controls/downloads/detail?name=enable1.txt), which is a 1.8 mb text-file
 with one word listed on each line, each word listed in lower-case. In this problem description, I've used upper-case
 for all words and their anagrams, but that is entirely optional, it's perfectly all right to use lower-case if you want
 to. 

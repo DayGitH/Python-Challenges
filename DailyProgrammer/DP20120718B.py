@@ -24,43 +24,60 @@ Write a program that can read an input file in this syntax and output all the ta
 no task happens before one of its dependencies.
 """
 
-from collections import defaultdict
+
+class Node:
+    def __init__(self, value, above=None, below=None):
+        self.value = value
+        self.above = set()
+        self.below = set()
+
+        if above:
+            self.add_above(above)
+        if below:
+            self.add_below(below)
+
+    def add_above(self, value):
+        self.above.add(value)
+
+    def remove_above(self, value):
+        self.above.remove(value)
+
+    def add_below(self, value):
+        self.below.add(value)
 
 
 def work_list(inp):
-    dep_up = defaultdict(list)
-    dep_down = defaultdict(list)
-    top = set([])
-    bottom = set([])
-    for row in inp.split('\n'):
-        later, before = row.split(': ')
-        before = before.split(' ')
-        for b in before:
-            dep_up[later].append(b)
-            dep_down[b].append(later)
-            if later in top:
-                top.remove(later)
-                bottom.add(later)
-            if b not in bottom:
-                top.add(b)
+    node_list = {}
+    working_list = inp.split('\n')
 
-    print(dep_up)
-    print(dep_down)
-    res = []
-    while top:
-        hold = []
-        for t in top:
-            if t not in dep_up:
-                res.append(t)
-            elif dep_up[t] in res:
-                res.append(t)
+    for w in working_list:
+        head, tails = w.split(': ')
+
+        if head not in node_list:
+            node_list[head] = Node(head)
+
+        for t in tails.split(' '):
+            if t not in node_list:
+                node_list[t] = Node(t, below=head)
             else:
-                hold.append(t)
-            # res.append(t)
+                node_list[t].add_below(head)
+            node_list[head].add_above(t)
 
-        top = [dep_down[t][0] for t in top]
-        print(top)
-    print(res)
+    res = []
+    while node_list:
+        hold = [n for n in node_list.keys() if not node_list[n].above]
+        res += hold
+        for h in hold:
+            node_list = remove_node(h, node_list)
+    return res
+
+
+def remove_node(node, node_list):
+    node_list.pop(node)
+    for n in node_list:
+        if node in node_list[n].above:
+            node_list[n].remove_above(node)
+    return node_list
 
 
 def main():
