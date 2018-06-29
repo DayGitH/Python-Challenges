@@ -39,6 +39,7 @@ result.
 
 
 def main():
+    """ too similar to 20120330B.py """
     pass
 
 

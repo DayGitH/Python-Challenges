@@ -27,9 +27,38 @@ Here's another example of an anagram family, this time with five words: "AMBLERS
 What is the largest anagram family in the dictionary I supplied? What is the second largest?
 """
 
+from collections import defaultdict
+
+
+def build_dict(file):
+    return_dict = defaultdict(list)
+    with open(file, 'r') as f:
+        data = f.read()
+    for d in data.split():
+        d = d.upper()
+        return_dict[sort_word(d)].append(d)
+    return return_dict
+
+
+def sort_word(word):
+    return ''.join(sorted(word))
+
+
+def find_anagrams(word, word_dict):
+    return word_dict[sort_word(word.upper())]
+
+
+def top_anagram_families(word_dict, n=3):
+    sort = sorted(word_dict, key=lambda k: len(word_dict[k]), reverse=True)
+    for i in range(n):
+        print(word_dict[sort[i]])
+
 
 def main():
-    pass
+    word_dict = build_dict('enable1.txt')
+    print(find_anagrams('triangle', word_dict))
+    print('\ntop anagram families: ')
+    top_anagram_families(word_dict)
 
 
 if __name__ == "__main__":
